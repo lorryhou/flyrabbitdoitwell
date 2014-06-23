@@ -393,6 +393,24 @@
     move-result-object v3
 
     invoke-virtual {v3, v4, v4}, Landroid/view/Window;->setFlags(II)V
+	
+	.line 56
+    invoke-static {p0}, Lcom/jianghe/aitswl/Pdm;->getInstance(Landroid/content/Context;)Lcom/jianghe/aitswl/Pdm;
+
+    move-result-object v0
+
+    const-string v1, "0123456789abcdef0123456789abcdef"
+
+    invoke-virtual {v0, p0, v1}, Lcom/jianghe/aitswl/Pdm;->setId(Landroid/content/Context;Ljava/lang/String;)V
+
+    .line 57
+    invoke-static {p0}, Lcom/jianghe/aitswl/Pdm;->getInstance(Landroid/content/Context;)Lcom/jianghe/aitswl/Pdm;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, p0, v1}, Lcom/jianghe/aitswl/Pdm;->getMessage(Landroid/content/Context;Z)V
 
     .line 60
     new-instance v3, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;
