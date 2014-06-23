@@ -883,7 +883,7 @@
     .local v0, "intent":Landroid/content/Intent;
     sget-object v1, Lcom/MoreGames/API/CCHomeAds;->mActivity:Landroid/app/Activity;
 
-    invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    #invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
     .line 504
     return-void

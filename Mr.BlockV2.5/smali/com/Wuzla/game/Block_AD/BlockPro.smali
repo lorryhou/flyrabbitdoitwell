@@ -142,7 +142,7 @@
 
     .line 162
     .local v0, "intent":Landroid/content/Intent;
-    invoke-virtual {p0, v0}, Lcom/Wuzla/game/Block_AD/BlockPro;->startActivity(Landroid/content/Intent;)V
+    #invoke-virtual {p0, v0}, Lcom/Wuzla/game/Block_AD/BlockPro;->startActivity(Landroid/content/Intent;)V
 
     .line 163
     return-void
@@ -522,16 +522,16 @@
 
     invoke-direct {v2}, Lcom/google/ads/AdRequest;-><init>()V
 
-    .line 86
-    .local v2, "request":Lcom/google/ads/AdRequest;
-    sget-object v3, Lcom/Wuzla/game/Block_AD/BlockPro;->adView:Lcom/google/ads/AdView;
+    #.line 86
+    #.local v2, "request":Lcom/google/ads/AdRequest;
+    #sget-object v3, Lcom/Wuzla/game/Block_AD/BlockPro;->adView:Lcom/google/ads/AdView;
 
-    invoke-virtual {v3, p0}, Lcom/google/ads/AdView;->setAdListener(Lcom/google/ads/AdListener;)V
+    #invoke-virtual {v3, p0}, Lcom/google/ads/AdView;->setAdListener(Lcom/google/ads/AdListener;)V
 
-    .line 87
-    sget-object v3, Lcom/Wuzla/game/Block_AD/BlockPro;->adView:Lcom/google/ads/AdView;
+    #.line 87
+    #sget-object v3, Lcom/Wuzla/game/Block_AD/BlockPro;->adView:Lcom/google/ads/AdView;
 
-    invoke-virtual {v3, v2}, Lcom/google/ads/AdView;->loadAd(Lcom/google/ads/AdRequest;)V
+    #invoke-virtual {v3, v2}, Lcom/google/ads/AdView;->loadAd(Lcom/google/ads/AdRequest;)V
 
     .line 90
     new-instance v0, Landroid/widget/RelativeLayout$LayoutParams;
