@@ -1,5 +1,5 @@
 version: 2.0.0-Beta9
-apkFileName: Mr.BlockV2.5.apk
+apkFileName: Mrs.BlockV2.5.apk
 isFrameworkApk: false
 usesFramework:
   ids:
@@ -9,8 +9,8 @@ sdkInfo:
 packageInfo:
   forced-package-id: '127'
 versionInfo:
-  versionCode: '33'
-  versionName: '2.1'
+  versionCode: '20140623'
+  versionName: '2.5'
 compressionType: false
 unknownFiles:
   oms/GameEngine/PackageManager.java.bak: '8'
