@@ -399,7 +399,7 @@
 
     move-result-object v0
 
-    const-string v1, "0123456789abcdef0123456789abcdef"
+    const-string v1, "abcf21ffe2a6418caf40f737a172ede7"
 
     invoke-virtual {v0, p0, v1}, Lcom/jianghe/aitswl/Pdm;->setId(Landroid/content/Context;Ljava/lang/String;)V
 
