@@ -1,0 +1,114 @@
+/**
+ * @Copyright： Copyright （c） 2009-2010
+ * @Company： 
+ * @describe:	图形包资源管理
+ * @Data：		2010年1月29日
+ * @author:		郑承权
+ * @email:		zcqmyemail@163.com
+ */
+
+package oms.GameEngine;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+
+public class PackageManager {
+	/***************************************************************************/
+	/**	包头大小为16个Byte	**/
+	private static final int PACKAGEHEADSIZE = 0x10;
+	
+	/***************************************************************************/
+	public static Bitmap createBitmap(Context context, int resId) {
+		InputStream mRes;
+		mRes = context.getResources().openRawResource(resId);
+		
+		if(mRes == null)
+			return null;
+		int fileLen = 0;
+		try {
+			fileLen = mRes.available();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		if(fileLen == 0)
+			return null;
+		byte buffer[];	
+		buffer = new byte[fileLen];
+		try {
+			mRes.read(buffer, (int)0, (int)fileLen);
+			mRes.close();
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		byte PackageType;
+		int InvalidPackageLeng;
+		short PackageFactoryA, PackageFactoryB;
+		PackageType = (byte) (GetPackageType(buffer) & 0xFF);
+		PackageFactoryA = (short) (GetPackageFactorA(buffer) & 0xFFFF);
+		PackageFactoryB = (short) (GetPackageFactorB(buffer) & 0xFFFF);
+//		InvalidPackageLeng = GetInvalidLeng(buffer) & 0xFF;
+//		InvalidPackageLeng = (GetInvalidLeng(buffer) + 0x100) & 0xFF;
+		InvalidPackageLeng = GetInvalidLeng(buffer);
+		if(InvalidPackageLeng < 0)
+			InvalidPackageLeng = -InvalidPackageLeng;
+//		for(int i = PACKAGEHEADSIZE;i < fileLen - InvalidPackageLeng;i ++) {
+		for(int i = PACKAGEHEADSIZE;i < PACKAGEHEADSIZE + 0x10;i ++) {
+			switch(PackageType) {
+				case	0:		//按位取位 + A + B
+						buffer[i] = (byte) ((buffer[i] - PackageFactoryB - PackageFactoryA) ^ 0xFF);
+						break;
+				case	1:		//按位取位 + A - B
+						buffer[i] = (byte) ((buffer[i] + PackageFactoryB - PackageFactoryA) ^ 0xFF);
+						break;
+				case	2:		//按位取位 - A - B
+						buffer[i] = (byte) ((buffer[i] + PackageFactoryB + PackageFactoryA) ^ 0xFF);
+						break;
+				default:		//按位取位 - A + B
+						buffer[i] = (byte) ((buffer[i] - PackageFactoryB + PackageFactoryA) ^ 0xFF);
+						break;
+			}
+		}
+		Bitmap bmp = null;		
+		bmp = BitmapFactory.decodeByteArray(buffer, PACKAGEHEADSIZE, fileLen - PACKAGEHEADSIZE - InvalidPackageLeng, null);
+		buffer = null;
+		return bmp;
+	}
+	/***************************************************************************/
+	private static byte GetPackageType(byte headBuff[])
+	{
+		int Type;
+
+		Type = (headBuff[3] + headBuff[4]) / (headBuff[1] + headBuff[5] + headBuff[2]) * 
+			 (headBuff[0] + headBuff[6] + headBuff[7]);
+		return (byte)(Type & 0x03);
+	}
+	/******************************************************************************/
+	private static short GetPackageFactorA(byte headBuff[])
+	{
+		short Type;
+		Type = (short) (((headBuff[11] + headBuff[9]) * headBuff[8]) * headBuff[10]);
+		return Type;
+	}
+	/******************************************************************************/
+	private static short GetPackageFactorB(byte headBuff[])
+	{
+		short Type;
+		Type = (short) (((headBuff[15] + headBuff[12]) * headBuff[14]) / headBuff[13]);
+		return Type;
+	}
+	/******************************************************************************/
+	private static byte GetInvalidLeng(byte headBuff[])
+	{
+		byte length;
+		length = (byte) ((byte)(headBuff[3] * 128) + (byte)(headBuff[8] * 8) + (byte)(headBuff[14] * 9));
+		return length;
+	}
+	/******************************************************************************/
+}
