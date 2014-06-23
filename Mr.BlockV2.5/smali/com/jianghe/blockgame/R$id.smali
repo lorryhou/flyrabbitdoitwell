@@ -1,23 +1,23 @@
-.class public final Lcom/Wuzla/game/Block_AD/R$string;
+.class public final Lcom/jianghe/blockgame/R$id;
 .super Ljava/lang/Object;
 .source "R.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/Wuzla/game/Block_AD/R;
+    value = Lcom/jianghe/blockgame/R;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x19
-    name = "string"
+    name = "id"
 .end annotation
 
 
 # static fields
-.field public static final app_name:I = 0x7f050001
+.field public static final View:I = 0x7f060000
 
-.field public static final hello:I = 0x7f050000
+.field public static final ad:I = 0x7f060001
 
 
 # direct methods
@@ -25,7 +25,7 @@
     .locals 0
 
     .prologue
-    .line 420
+    .line 401
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

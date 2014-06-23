@@ -1,11 +1,11 @@
-.class public final Lcom/Wuzla/game/Block_AD/R$raw;
+.class public final Lcom/jianghe/blockgame/R$raw;
 .super Ljava/lang/Object;
 .source "R.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/Wuzla/game/Block_AD/R;
+    value = Lcom/jianghe/blockgame/R;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

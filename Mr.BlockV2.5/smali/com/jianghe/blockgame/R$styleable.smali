@@ -1,11 +1,11 @@
-.class public final Lcom/Wuzla/game/Block_AD/R$styleable;
+.class public final Lcom/jianghe/blockgame/R$styleable;
 .super Ljava/lang/Object;
 .source "R.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/Wuzla/game/Block_AD/R;
+    value = Lcom/jianghe/blockgame/R;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -40,7 +40,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/Wuzla/game/Block_AD/R$styleable;->com_admob_android_ads_AdView:[I
+    sput-object v0, Lcom/jianghe/blockgame/R$styleable;->com_admob_android_ads_AdView:[I
 
     .line 424
     return-void

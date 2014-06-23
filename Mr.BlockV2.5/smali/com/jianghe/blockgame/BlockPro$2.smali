@@ -1,11 +1,11 @@
-.class Lcom/Wuzla/game/Block_AD/BlockPro$2;
+.class Lcom/jianghe/blockgame/BlockPro$2;
 .super Landroid/os/Handler;
 .source "BlockPro.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/Wuzla/game/Block_AD/BlockPro;
+    value = Lcom/jianghe/blockgame/BlockPro;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/Wuzla/game/Block_AD/BlockPro;
+.field final synthetic this$0:Lcom/jianghe/blockgame/BlockPro;
 
 
 # direct methods
-.method constructor <init>(Lcom/Wuzla/game/Block_AD/BlockPro;)V
+.method constructor <init>(Lcom/jianghe/blockgame/BlockPro;)V
     .locals 0
 
     .prologue
     .line 1
-    iput-object p1, p0, Lcom/Wuzla/game/Block_AD/BlockPro$2;->this$0:Lcom/Wuzla/game/Block_AD/BlockPro;
+    iput-object p1, p0, Lcom/jianghe/blockgame/BlockPro$2;->this$0:Lcom/jianghe/blockgame/BlockPro;
 
     .line 259
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -40,17 +40,17 @@
 
     .prologue
     .line 263
-    iget-object v0, p0, Lcom/Wuzla/game/Block_AD/BlockPro$2;->this$0:Lcom/Wuzla/game/Block_AD/BlockPro;
+    iget-object v0, p0, Lcom/jianghe/blockgame/BlockPro$2;->this$0:Lcom/jianghe/blockgame/BlockPro;
 
-    # getter for: Lcom/Wuzla/game/Block_AD/BlockPro;->adViewStatus:Z
-    invoke-static {v0}, Lcom/Wuzla/game/Block_AD/BlockPro;->access$1(Lcom/Wuzla/game/Block_AD/BlockPro;)Z
+    # getter for: Lcom/jianghe/blockgame/BlockPro;->adViewStatus:Z
+    invoke-static {v0}, Lcom/jianghe/blockgame/BlockPro;->access$1(Lcom/jianghe/blockgame/BlockPro;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 264
-    sget-object v0, Lcom/Wuzla/game/Block_AD/BlockPro;->adView:Lcom/google/ads/AdView;
+    sget-object v0, Lcom/jianghe/blockgame/BlockPro;->adView:Lcom/google/ads/AdView;
 
     const/4 v1, 0x0
 
@@ -62,7 +62,7 @@
 
     .line 266
     :cond_0
-    sget-object v0, Lcom/Wuzla/game/Block_AD/BlockPro;->adView:Lcom/google/ads/AdView;
+    sget-object v0, Lcom/jianghe/blockgame/BlockPro;->adView:Lcom/google/ads/AdView;
 
     const/16 v1, 0x8
 

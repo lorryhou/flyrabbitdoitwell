@@ -1,5 +1,5 @@
 version: 2.0.0-Beta9
-apkFileName: Mrs.BlockV2.5.apk
+apkFileName: Mr.BlockV2.5.apk
 isFrameworkApk: false
 usesFramework:
   ids:

@@ -1,4 +1,4 @@
-.class public Lcom/Wuzla/game/Block_AD/C_BlockMedia;
+.class public Lcom/jianghe/blockgame/C_BlockMedia;
 .super Ljava/lang/Object;
 .source "C_BlockMedia.java"
 
@@ -47,7 +47,7 @@
     .line 17
     const/4 v0, 0x0
 
-    sput v0, Lcom/Wuzla/game/Block_AD/C_BlockMedia;->m_FIXControl:I
+    sput v0, Lcom/jianghe/blockgame/C_BlockMedia;->m_FIXControl:I
 
     .line 34
     const/16 v0, 0xb
@@ -56,7 +56,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/Wuzla/game/Block_AD/C_BlockMedia;->SoundResIDTBL:[I
+    sput-object v0, Lcom/jianghe/blockgame/C_BlockMedia;->SoundResIDTBL:[I
 
     .line 40
     const/16 v0, 0x19
@@ -65,7 +65,7 @@
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/Wuzla/game/Block_AD/C_BlockMedia;->SoundPlayMode:[Z
+    sput-object v0, Lcom/jianghe/blockgame/C_BlockMedia;->SoundPlayMode:[Z
 
     .line 50
     const/16 v0, 0x19
@@ -166,7 +166,7 @@
     aput v5, v0, v1
 
     .line 50
-    sput-object v0, Lcom/Wuzla/game/Block_AD/C_BlockMedia;->SoundPlayChannel:[I
+    sput-object v0, Lcom/jianghe/blockgame/C_BlockMedia;->SoundPlayChannel:[I
 
     .line 9
     return-void
@@ -242,7 +242,7 @@
     .line 67
     .local v0, "i":I
     :goto_0
-    sget-object v2, Lcom/Wuzla/game/Block_AD/C_BlockMedia;->SoundResIDTBL:[I
+    sget-object v2, Lcom/jianghe/blockgame/C_BlockMedia;->SoundResIDTBL:[I
 
     aget v2, v2, v0
 
@@ -255,13 +255,13 @@
 
     .line 68
     :cond_0
-    sget-object v2, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v2, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     invoke-virtual {v2}, Loms/GameEngine/C_Lib;->getMediaManager()Loms/GameEngine/MediaManager;
 
     move-result-object v2
 
-    sget-object v3, Lcom/Wuzla/game/Block_AD/C_BlockMedia;->SoundResIDTBL:[I
+    sget-object v3, Lcom/jianghe/blockgame/C_BlockMedia;->SoundResIDTBL:[I
 
     add-int/lit8 v1, v0, 0x1
 
@@ -284,24 +284,24 @@
 
     .prologue
     .line 74
-    sget-object v0, Lcom/Wuzla/game/Block_AD/C_BlockMedia;->SoundPlayMode:[Z
+    sget-object v0, Lcom/jianghe/blockgame/C_BlockMedia;->SoundPlayMode:[Z
 
     aget-boolean v0, v0, p0
 
     if-eqz v0, :cond_0
 
     .line 75
-    sget-object v0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v0, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     invoke-virtual {v0}, Loms/GameEngine/C_Lib;->getMediaManager()Loms/GameEngine/MediaManager;
 
     move-result-object v0
 
-    sget-object v1, Lcom/Wuzla/game/Block_AD/C_BlockMedia;->SoundPlayChannel:[I
+    sget-object v1, Lcom/jianghe/blockgame/C_BlockMedia;->SoundPlayChannel:[I
 
     aget v1, v1, p0
 
-    sget-object v2, Lcom/Wuzla/game/Block_AD/C_BlockMedia;->SoundResIDTBL:[I
+    sget-object v2, Lcom/jianghe/blockgame/C_BlockMedia;->SoundResIDTBL:[I
 
     aget v2, v2, p0
 
@@ -318,24 +318,24 @@
 
     .prologue
     .line 86
-    sget-object v0, Lcom/Wuzla/game/Block_AD/C_BlockMedia;->SoundPlayMode:[Z
+    sget-object v0, Lcom/jianghe/blockgame/C_BlockMedia;->SoundPlayMode:[Z
 
     aget-boolean v0, v0, p0
 
     if-eqz v0, :cond_0
 
     .line 87
-    sget-object v0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v0, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     invoke-virtual {v0}, Loms/GameEngine/C_Lib;->getMediaManager()Loms/GameEngine/MediaManager;
 
     move-result-object v0
 
-    sget-object v1, Lcom/Wuzla/game/Block_AD/C_BlockMedia;->SoundPlayChannel:[I
+    sget-object v1, Lcom/jianghe/blockgame/C_BlockMedia;->SoundPlayChannel:[I
 
     aget v1, v1, p0
 
-    sget-object v2, Lcom/Wuzla/game/Block_AD/C_BlockMedia;->SoundResIDTBL:[I
+    sget-object v2, Lcom/jianghe/blockgame/C_BlockMedia;->SoundResIDTBL:[I
 
     aget v2, v2, p0
 
@@ -352,20 +352,20 @@
 
     .prologue
     .line 80
-    sget-object v0, Lcom/Wuzla/game/Block_AD/C_BlockMedia;->SoundPlayMode:[Z
+    sget-object v0, Lcom/jianghe/blockgame/C_BlockMedia;->SoundPlayMode:[Z
 
     aget-boolean v0, v0, p0
 
     if-eqz v0, :cond_0
 
     .line 81
-    sget-object v0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v0, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     invoke-virtual {v0}, Loms/GameEngine/C_Lib;->getMediaManager()Loms/GameEngine/MediaManager;
 
     move-result-object v0
 
-    sget-object v1, Lcom/Wuzla/game/Block_AD/C_BlockMedia;->SoundPlayChannel:[I
+    sget-object v1, Lcom/jianghe/blockgame/C_BlockMedia;->SoundPlayChannel:[I
 
     aget v1, v1, p0
 

@@ -1,4 +1,4 @@
-.class public Lcom/Wuzla/game/Block_AD/C_OPhoneApp;
+.class public Lcom/jianghe/blockgame/C_OPhoneApp;
 .super Ljava/lang/Object;
 .source "C_OPhoneApp.java"
 
@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/Wuzla/game/Block_AD/C_OPhoneApp$C_GameThread;
+        Lcom/jianghe/blockgame/C_OPhoneApp$C_GameThread;
     }
 .end annotation
 
@@ -22,9 +22,9 @@
 
 
 # instance fields
-.field private cBlockMenu:Lcom/Wuzla/game/Block_AD/C_BlockMenu;
+.field private cBlockMenu:Lcom/jianghe/blockgame/C_BlockMenu;
 
-.field private cGameThread:Lcom/Wuzla/game/Block_AD/C_OPhoneApp$C_GameThread;
+.field private cGameThread:Lcom/jianghe/blockgame/C_OPhoneApp$C_GameThread;
 
 
 # direct methods
@@ -35,12 +35,12 @@
     const/4 v0, 0x0
 
     .line 38
-    sput v0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->mADFlag:I
+    sput v0, Lcom/jianghe/blockgame/C_OPhoneApp;->mADFlag:I
 
     .line 144
-    sput v0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->DownCount:I
+    sput v0, Lcom/jianghe/blockgame/C_OPhoneApp;->DownCount:I
 
-    sput v0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->UpCount:I
+    sput v0, Lcom/jianghe/blockgame/C_OPhoneApp;->UpCount:I
 
     .line 9
     return-void
@@ -59,7 +59,7 @@
     .line 40
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cGameThread:Lcom/Wuzla/game/Block_AD/C_OPhoneApp$C_GameThread;
+    iput-object v0, p0, Lcom/jianghe/blockgame/C_OPhoneApp;->cGameThread:Lcom/jianghe/blockgame/C_OPhoneApp$C_GameThread;
 
     .line 43
     new-instance v0, Loms/GameEngine/C_Lib;
@@ -70,10 +70,10 @@
 
     invoke-direct {v0, p1, v3, v1, v2}, Loms/GameEngine/C_Lib;-><init>(Landroid/content/Context;III)V
 
-    sput-object v0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sput-object v0, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     .line 44
-    sget-object v0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v0, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     invoke-virtual {v0}, Loms/GameEngine/C_Lib;->getMediaManager()Loms/GameEngine/MediaManager;
 
@@ -84,7 +84,7 @@
     invoke-virtual {v0, v1, v3}, Loms/GameEngine/MediaManager;->Init(II)V
 
     .line 46
-    sget-object v0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v0, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     invoke-virtual {v0}, Loms/GameEngine/C_Lib;->getGameCanvas()Loms/GameEngine/GameCanvas;
 
@@ -95,20 +95,20 @@
     invoke-virtual {v0, v1}, Loms/GameEngine/GameCanvas;->SetMaxLogicLayer(I)V
 
     .line 47
-    sget-object v0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v0, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     const/16 v1, 0x21
 
     invoke-virtual {v0, v1}, Loms/GameEngine/C_Lib;->setFrameReflashTime(I)V
 
     .line 48
-    new-instance v0, Lcom/Wuzla/game/Block_AD/C_BlockMenu;
+    new-instance v0, Lcom/jianghe/blockgame/C_BlockMenu;
 
-    sget-object v1, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v1, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
-    invoke-direct {v0, v1}, Lcom/Wuzla/game/Block_AD/C_BlockMenu;-><init>(Loms/GameEngine/C_Lib;)V
+    invoke-direct {v0, v1}, Lcom/jianghe/blockgame/C_BlockMenu;-><init>(Loms/GameEngine/C_Lib;)V
 
-    iput-object v0, p0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cBlockMenu:Lcom/Wuzla/game/Block_AD/C_BlockMenu;
+    iput-object v0, p0, Lcom/jianghe/blockgame/C_OPhoneApp;->cBlockMenu:Lcom/jianghe/blockgame/C_BlockMenu;
 
     .line 49
     return-void
@@ -224,20 +224,20 @@
 
     .prologue
     .line 119
-    sget-object v1, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v1, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     invoke-virtual {v1}, Loms/GameEngine/C_Lib;->GetActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/Wuzla/game/Block_AD/BlockPro;
+    check-cast v0, Lcom/jianghe/blockgame/BlockPro;
 
     .line 120
-    .local v0, "activity":Lcom/Wuzla/game/Block_AD/BlockPro;
+    .local v0, "activity":Lcom/jianghe/blockgame/BlockPro;
     if-eqz v0, :cond_0
 
     .line 121
-    invoke-virtual {v0, p0}, Lcom/Wuzla/game/Block_AD/BlockPro;->setAdVisibility(Z)V
+    invoke-virtual {v0, p0}, Lcom/jianghe/blockgame/BlockPro;->setAdVisibility(Z)V
 
     .line 122
     :cond_0
@@ -257,7 +257,7 @@
 
     .prologue
     .line 186
-    invoke-direct {p0, p1, p2}, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->CM_GetNumCount(J)I
+    invoke-direct {p0, p1, p2}, Lcom/jianghe/blockgame/C_OPhoneApp;->CM_GetNumCount(J)I
 
     move-result v0
 
@@ -300,7 +300,7 @@
     div-int/lit8 v4, v3, 0xa
 
     .line 193
-    sget-object v5, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v5, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     invoke-virtual {v5}, Loms/GameEngine/C_Lib;->getGameCanvas()Loms/GameEngine/GameCanvas;
 
@@ -324,7 +324,7 @@
 
     .prologue
     .line 52
-    sget-object v0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v0, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     return-object v0
 .end method
@@ -334,7 +334,7 @@
 
     .prologue
     .line 75
-    sget-object v2, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v2, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     invoke-virtual {v2}, Loms/GameEngine/C_Lib;->getMediaManager()Loms/GameEngine/MediaManager;
 
@@ -353,7 +353,7 @@
     .line 87
     const/4 v2, 0x0
 
-    iput-object v2, p0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cGameThread:Lcom/Wuzla/game/Block_AD/C_OPhoneApp$C_GameThread;
+    iput-object v2, p0, Lcom/jianghe/blockgame/C_OPhoneApp;->cGameThread:Lcom/jianghe/blockgame/C_OPhoneApp$C_GameThread;
 
     .line 88
     return-void
@@ -361,9 +361,9 @@
     .line 80
     :cond_0
     :try_start_0
-    iget-object v2, p0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cGameThread:Lcom/Wuzla/game/Block_AD/C_OPhoneApp$C_GameThread;
+    iget-object v2, p0, Lcom/jianghe/blockgame/C_OPhoneApp;->cGameThread:Lcom/jianghe/blockgame/C_OPhoneApp$C_GameThread;
 
-    invoke-virtual {v2}, Lcom/Wuzla/game/Block_AD/C_OPhoneApp$C_GameThread;->join()V
+    invoke-virtual {v2}, Lcom/jianghe/blockgame/C_OPhoneApp$C_GameThread;->join()V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -401,7 +401,7 @@
     sparse-switch p1, :sswitch_data_0
 
     .line 108
-    sget-object v1, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v1, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     invoke-virtual {v1}, Loms/GameEngine/C_Lib;->getInput()Loms/GameEngine/InputInterface;
 
@@ -415,7 +415,7 @@
 
     .line 95
     :sswitch_0
-    sget-object v2, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v2, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     invoke-virtual {v2}, Loms/GameEngine/C_Lib;->getMediaManager()Loms/GameEngine/MediaManager;
 
@@ -427,7 +427,7 @@
 
     .line 98
     :sswitch_1
-    sget-object v1, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v1, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     invoke-virtual {v1}, Loms/GameEngine/C_Lib;->getMediaManager()Loms/GameEngine/MediaManager;
 
@@ -481,7 +481,7 @@
     sparse-switch p1, :sswitch_data_0
 
     .line 137
-    sget-object v0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v0, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     invoke-virtual {v0}, Loms/GameEngine/C_Lib;->getInput()Loms/GameEngine/InputInterface;
 
@@ -519,7 +519,7 @@
 
     .prologue
     .line 59
-    sget-object v0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v0, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     invoke-virtual {v0}, Loms/GameEngine/C_Lib;->onPause()V
 
@@ -532,29 +532,29 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cGameThread:Lcom/Wuzla/game/Block_AD/C_OPhoneApp$C_GameThread;
+    iget-object v0, p0, Lcom/jianghe/blockgame/C_OPhoneApp;->cGameThread:Lcom/jianghe/blockgame/C_OPhoneApp$C_GameThread;
 
     if-nez v0, :cond_0
 
     .line 64
-    new-instance v0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp$C_GameThread;
+    new-instance v0, Lcom/jianghe/blockgame/C_OPhoneApp$C_GameThread;
 
-    sget-object v1, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v1, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
-    iget-object v2, p0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cBlockMenu:Lcom/Wuzla/game/Block_AD/C_BlockMenu;
+    iget-object v2, p0, Lcom/jianghe/blockgame/C_OPhoneApp;->cBlockMenu:Lcom/jianghe/blockgame/C_BlockMenu;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/Wuzla/game/Block_AD/C_OPhoneApp$C_GameThread;-><init>(Lcom/Wuzla/game/Block_AD/C_OPhoneApp;Loms/GameEngine/C_Lib;Lcom/Wuzla/game/Block_AD/C_BlockMenu;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/jianghe/blockgame/C_OPhoneApp$C_GameThread;-><init>(Lcom/jianghe/blockgame/C_OPhoneApp;Loms/GameEngine/C_Lib;Lcom/jianghe/blockgame/C_BlockMenu;)V
 
-    iput-object v0, p0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cGameThread:Lcom/Wuzla/game/Block_AD/C_OPhoneApp$C_GameThread;
+    iput-object v0, p0, Lcom/jianghe/blockgame/C_OPhoneApp;->cGameThread:Lcom/jianghe/blockgame/C_OPhoneApp$C_GameThread;
 
     .line 66
-    iget-object v0, p0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cGameThread:Lcom/Wuzla/game/Block_AD/C_OPhoneApp$C_GameThread;
+    iget-object v0, p0, Lcom/jianghe/blockgame/C_OPhoneApp;->cGameThread:Lcom/jianghe/blockgame/C_OPhoneApp$C_GameThread;
 
-    invoke-virtual {v0}, Lcom/Wuzla/game/Block_AD/C_OPhoneApp$C_GameThread;->start()V
+    invoke-virtual {v0}, Lcom/jianghe/blockgame/C_OPhoneApp$C_GameThread;->start()V
 
     .line 71
     :cond_0
-    sget-object v0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v0, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     invoke-virtual {v0}, Loms/GameEngine/C_Lib;->onResume()V
 
@@ -598,7 +598,7 @@
 
     .line 151
     :pswitch_0
-    sget-object v2, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v2, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     invoke-virtual {v2}, Loms/GameEngine/C_Lib;->getInput()Loms/GameEngine/InputInterface;
 
@@ -607,17 +607,17 @@
     invoke-virtual {v2, v0, v1}, Loms/GameEngine/InputInterface;->SetTouchDown(II)V
 
     .line 152
-    sget v2, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->DownCount:I
+    sget v2, Lcom/jianghe/blockgame/C_OPhoneApp;->DownCount:I
 
     add-int/lit8 v2, v2, 0x1
 
-    sput v2, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->DownCount:I
+    sput v2, Lcom/jianghe/blockgame/C_OPhoneApp;->DownCount:I
 
     goto :goto_0
 
     .line 155
     :pswitch_1
-    sget-object v2, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v2, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     invoke-virtual {v2}, Loms/GameEngine/C_Lib;->getInput()Loms/GameEngine/InputInterface;
 
@@ -626,17 +626,17 @@
     invoke-virtual {v2, v0, v1}, Loms/GameEngine/InputInterface;->SetTouchUp(II)V
 
     .line 156
-    sget v2, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->UpCount:I
+    sget v2, Lcom/jianghe/blockgame/C_OPhoneApp;->UpCount:I
 
     add-int/lit8 v2, v2, 0x1
 
-    sput v2, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->UpCount:I
+    sput v2, Lcom/jianghe/blockgame/C_OPhoneApp;->UpCount:I
 
     goto :goto_0
 
     .line 159
     :pswitch_2
-    sget-object v2, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
+    sget-object v2, Lcom/jianghe/blockgame/C_OPhoneApp;->cLib:Loms/GameEngine/C_Lib;
 
     invoke-virtual {v2}, Loms/GameEngine/C_Lib;->getInput()Loms/GameEngine/InputInterface;
 

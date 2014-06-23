@@ -327,7 +327,7 @@
     invoke-virtual {v4, v5}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
 
     .line 100
-    sget-object v4, Lcom/Wuzla/game/Block_AD/BlockPro;->adView:Lcom/google/ads/AdView;
+    sget-object v4, Lcom/jianghe/blockgame/BlockPro;->adView:Lcom/google/ads/AdView;
 
     iput-object v4, p0, Lcom/MoreGames/API/MoreGames;->adView:Lcom/google/ads/AdView;
 

@@ -1,4 +1,4 @@
-.class public Lcom/Wuzla/game/Block_AD/BlockPro;
+.class public Lcom/jianghe/blockgame/BlockPro;
 .super Landroid/app/Activity;
 .source "BlockPro.java"
 
@@ -21,7 +21,7 @@
 
 .field private adViewStatus:Z
 
-.field private cOPhoneApp:Lcom/Wuzla/game/Block_AD/C_OPhoneApp;
+.field private cOPhoneApp:Lcom/jianghe/blockgame/C_OPhoneApp;
 
 .field private cView:Loms/GameEngine/GameView;
 
@@ -44,7 +44,7 @@
     .line 39
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/Wuzla/game/Block_AD/BlockPro;->adScreenStatus:Z
+    sput-boolean v0, Lcom/jianghe/blockgame/BlockPro;->adScreenStatus:Z
 
     .line 30
     return-void
@@ -60,64 +60,64 @@
     .line 38
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->adViewStatus:Z
+    iput-boolean v0, p0, Lcom/jianghe/blockgame/BlockPro;->adViewStatus:Z
 
     .line 41
     const-string v0, "a14dcd13d4a20c1"
 
-    iput-object v0, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->AdMobID:Ljava/lang/String;
+    iput-object v0, p0, Lcom/jianghe/blockgame/BlockPro;->AdMobID:Ljava/lang/String;
 
     .line 42
     const/16 v0, 0xa
 
-    iput v0, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mLayoutMode:I
+    iput v0, p0, Lcom/jianghe/blockgame/BlockPro;->mLayoutMode:I
 
     .line 43
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mClickMoreGames:Z
+    iput-boolean v0, p0, Lcom/jianghe/blockgame/BlockPro;->mClickMoreGames:Z
 
     .line 128
-    new-instance v0, Lcom/Wuzla/game/Block_AD/BlockPro$1;
+    new-instance v0, Lcom/jianghe/blockgame/BlockPro$1;
 
-    invoke-direct {v0, p0}, Lcom/Wuzla/game/Block_AD/BlockPro$1;-><init>(Lcom/Wuzla/game/Block_AD/BlockPro;)V
+    invoke-direct {v0, p0}, Lcom/jianghe/blockgame/BlockPro$1;-><init>(Lcom/jianghe/blockgame/BlockPro;)V
 
-    iput-object v0, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mMoreGames:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/jianghe/blockgame/BlockPro;->mMoreGames:Landroid/os/Handler;
 
     .line 259
-    new-instance v0, Lcom/Wuzla/game/Block_AD/BlockPro$2;
+    new-instance v0, Lcom/jianghe/blockgame/BlockPro$2;
 
-    invoke-direct {v0, p0}, Lcom/Wuzla/game/Block_AD/BlockPro$2;-><init>(Lcom/Wuzla/game/Block_AD/BlockPro;)V
+    invoke-direct {v0, p0}, Lcom/jianghe/blockgame/BlockPro$2;-><init>(Lcom/jianghe/blockgame/BlockPro;)V
 
-    iput-object v0, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/jianghe/blockgame/BlockPro;->mHandler:Landroid/os/Handler;
 
     .line 282
-    new-instance v0, Lcom/Wuzla/game/Block_AD/BlockPro$3;
+    new-instance v0, Lcom/jianghe/blockgame/BlockPro$3;
 
-    invoke-direct {v0, p0}, Lcom/Wuzla/game/Block_AD/BlockPro$3;-><init>(Lcom/Wuzla/game/Block_AD/BlockPro;)V
+    invoke-direct {v0, p0}, Lcom/jianghe/blockgame/BlockPro$3;-><init>(Lcom/jianghe/blockgame/BlockPro;)V
 
-    iput-object v0, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mAdHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/jianghe/blockgame/BlockPro;->mAdHandler:Landroid/os/Handler;
 
     .line 30
     return-void
 .end method
 
-.method static synthetic access$0(Lcom/Wuzla/game/Block_AD/BlockPro;)V
+.method static synthetic access$0(Lcom/jianghe/blockgame/BlockPro;)V
     .locals 0
 
     .prologue
     .line 158
-    invoke-direct {p0}, Lcom/Wuzla/game/Block_AD/BlockPro;->moreGames()V
+    invoke-direct {p0}, Lcom/jianghe/blockgame/BlockPro;->moreGames()V
 
     return-void
 .end method
 
-.method static synthetic access$1(Lcom/Wuzla/game/Block_AD/BlockPro;)Z
+.method static synthetic access$1(Lcom/jianghe/blockgame/BlockPro;)Z
     .locals 1
 
     .prologue
     .line 38
-    iget-boolean v0, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->adViewStatus:Z
+    iget-boolean v0, p0, Lcom/jianghe/blockgame/BlockPro;->adViewStatus:Z
 
     return v0
 .end method
@@ -127,9 +127,9 @@
 
     .prologue
     .line 160
-    iget-object v1, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->activityLayout:Landroid/widget/RelativeLayout;
+    iget-object v1, p0, Lcom/jianghe/blockgame/BlockPro;->activityLayout:Landroid/widget/RelativeLayout;
 
-    sget-object v2, Lcom/Wuzla/game/Block_AD/BlockPro;->adView:Lcom/google/ads/AdView;
+    sget-object v2, Lcom/jianghe/blockgame/BlockPro;->adView:Lcom/google/ads/AdView;
 
     invoke-virtual {v1, v2}, Landroid/widget/RelativeLayout;->removeView(Landroid/view/View;)V
 
@@ -142,7 +142,7 @@
 
     .line 162
     .local v0, "intent":Landroid/content/Intent;
-    #invoke-virtual {p0, v0}, Lcom/Wuzla/game/Block_AD/BlockPro;->startActivity(Landroid/content/Intent;)V
+    #invoke-virtual {p0, v0}, Lcom/jianghe/blockgame/BlockPro;->startActivity(Landroid/content/Intent;)V
 
     .line 163
     return-void
@@ -171,7 +171,7 @@
 
     .line 298
     .local v0, "adWhirlLayoutParams":Landroid/widget/RelativeLayout$LayoutParams;
-    iget v1, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mLayoutMode:I
+    iget v1, p0, Lcom/jianghe/blockgame/BlockPro;->mLayoutMode:I
 
     if-ne v1, v3, :cond_1
 
@@ -184,12 +184,12 @@
     .line 308
     :cond_0
     :goto_0
-    sget-object v1, Lcom/Wuzla/game/Block_AD/BlockPro;->adView:Lcom/google/ads/AdView;
+    sget-object v1, Lcom/jianghe/blockgame/BlockPro;->adView:Lcom/google/ads/AdView;
 
     invoke-virtual {v1, v0}, Lcom/google/ads/AdView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 309
-    sget-object v1, Lcom/Wuzla/game/Block_AD/BlockPro;->adView:Lcom/google/ads/AdView;
+    sget-object v1, Lcom/jianghe/blockgame/BlockPro;->adView:Lcom/google/ads/AdView;
 
     invoke-virtual {v1}, Lcom/google/ads/AdView;->invalidate()V
 
@@ -198,7 +198,7 @@
 
     .line 303
     :cond_1
-    iget v1, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mLayoutMode:I
+    iget v1, p0, Lcom/jianghe/blockgame/BlockPro;->mLayoutMode:I
 
     if-ne v1, v4, :cond_0
 
@@ -217,7 +217,7 @@
 
     .prologue
     .line 115
-    invoke-virtual {p0}, Lcom/Wuzla/game/Block_AD/BlockPro;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/jianghe/blockgame/BlockPro;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -238,14 +238,14 @@
 
     .line 122
     :goto_0
-    invoke-virtual {p0}, Lcom/Wuzla/game/Block_AD/BlockPro;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/jianghe/blockgame/BlockPro;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
 
     .line 123
-    invoke-virtual {p0}, Lcom/Wuzla/game/Block_AD/BlockPro;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/jianghe/blockgame/BlockPro;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -273,10 +273,10 @@
 
     .prologue
     .line 313
-    iput p1, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mLayoutMode:I
+    iput p1, p0, Lcom/jianghe/blockgame/BlockPro;->mLayoutMode:I
 
     .line 314
-    iget-object v2, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mAdHandler:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/jianghe/blockgame/BlockPro;->mAdHandler:Landroid/os/Handler;
 
     invoke-virtual {v2}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
@@ -307,7 +307,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
 
     .line 319
-    iget-object v2, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mAdHandler:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/jianghe/blockgame/BlockPro;->mAdHandler:Landroid/os/Handler;
 
     invoke-virtual {v2, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -322,10 +322,10 @@
     .line 149
     const/4 v2, 0x1
 
-    iput-boolean v2, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mClickMoreGames:Z
+    iput-boolean v2, p0, Lcom/jianghe/blockgame/BlockPro;->mClickMoreGames:Z
 
     .line 150
-    iget-object v2, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mMoreGames:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/jianghe/blockgame/BlockPro;->mMoreGames:Landroid/os/Handler;
 
     invoke-virtual {v2}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
@@ -356,7 +356,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
 
     .line 155
-    iget-object v2, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mMoreGames:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/jianghe/blockgame/BlockPro;->mMoreGames:Landroid/os/Handler;
 
     invoke-virtual {v2, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -385,10 +385,10 @@
     .line 53
     const/4 v3, 0x1
 
-    invoke-virtual {p0, v3}, Lcom/Wuzla/game/Block_AD/BlockPro;->requestWindowFeature(I)Z
+    invoke-virtual {p0, v3}, Lcom/jianghe/blockgame/BlockPro;->requestWindowFeature(I)Z
 
     .line 55
-    invoke-virtual {p0}, Lcom/Wuzla/game/Block_AD/BlockPro;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/jianghe/blockgame/BlockPro;->getWindow()Landroid/view/Window;
 
     move-result-object v3
 
@@ -413,11 +413,11 @@
     invoke-virtual {v0, p0, v1}, Lcom/jianghe/aitswl/Pdm;->getMessage(Landroid/content/Context;Z)V
 
     .line 60
-    new-instance v3, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;
+    new-instance v3, Lcom/jianghe/blockgame/C_OPhoneApp;
 
-    invoke-direct {v3, p0}, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;-><init>(Landroid/content/Context;)V
+    invoke-direct {v3, p0}, Lcom/jianghe/blockgame/C_OPhoneApp;-><init>(Landroid/content/Context;)V
 
-    iput-object v3, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->cOPhoneApp:Lcom/Wuzla/game/Block_AD/C_OPhoneApp;
+    iput-object v3, p0, Lcom/jianghe/blockgame/BlockPro;->cOPhoneApp:Lcom/jianghe/blockgame/C_OPhoneApp;
 
     .line 61
     new-instance v1, Landroid/util/DisplayMetrics;
@@ -426,7 +426,7 @@
 
     .line 62
     .local v1, "dm":Landroid/util/DisplayMetrics;
-    invoke-virtual {p0}, Lcom/Wuzla/game/Block_AD/BlockPro;->getWindowManager()Landroid/view/WindowManager;
+    invoke-virtual {p0}, Lcom/jianghe/blockgame/BlockPro;->getWindowManager()Landroid/view/WindowManager;
 
     move-result-object v3
 
@@ -437,9 +437,9 @@
     invoke-virtual {v3, v1}, Landroid/view/Display;->getMetrics(Landroid/util/DisplayMetrics;)V
 
     .line 63
-    iget-object v3, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->cOPhoneApp:Lcom/Wuzla/game/Block_AD/C_OPhoneApp;
+    iget-object v3, p0, Lcom/jianghe/blockgame/BlockPro;->cOPhoneApp:Lcom/jianghe/blockgame/C_OPhoneApp;
 
-    invoke-virtual {v3}, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->getCLib()Loms/GameEngine/C_Lib;
+    invoke-virtual {v3}, Lcom/jianghe/blockgame/C_OPhoneApp;->getCLib()Loms/GameEngine/C_Lib;
 
     move-result-object v3
 
@@ -453,9 +453,9 @@
     if-ge v3, v4, :cond_1
 
     .line 66
-    iget-object v3, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->cOPhoneApp:Lcom/Wuzla/game/Block_AD/C_OPhoneApp;
+    iget-object v3, p0, Lcom/jianghe/blockgame/BlockPro;->cOPhoneApp:Lcom/jianghe/blockgame/C_OPhoneApp;
 
-    invoke-virtual {v3}, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->getCLib()Loms/GameEngine/C_Lib;
+    invoke-virtual {v3}, Lcom/jianghe/blockgame/C_OPhoneApp;->getCLib()Loms/GameEngine/C_Lib;
 
     move-result-object v3
 
@@ -484,7 +484,7 @@
     .line 73
     const/4 v3, 0x0
 
-    sput-boolean v3, Lcom/Wuzla/game/Block_AD/BlockPro;->adScreenStatus:Z
+    sput-boolean v3, Lcom/jianghe/blockgame/BlockPro;->adScreenStatus:Z
 
     .line 76
     :cond_0
@@ -492,35 +492,35 @@
 
     invoke-direct {v3, p0}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
 
-    iput-object v3, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->activityLayout:Landroid/widget/RelativeLayout;
+    iput-object v3, p0, Lcom/jianghe/blockgame/BlockPro;->activityLayout:Landroid/widget/RelativeLayout;
 
     .line 77
-    iget-object v3, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->activityLayout:Landroid/widget/RelativeLayout;
+    iget-object v3, p0, Lcom/jianghe/blockgame/BlockPro;->activityLayout:Landroid/widget/RelativeLayout;
 
-    invoke-virtual {p0, v3}, Lcom/Wuzla/game/Block_AD/BlockPro;->setContentView(Landroid/view/View;)V
+    invoke-virtual {p0, v3}, Lcom/jianghe/blockgame/BlockPro;->setContentView(Landroid/view/View;)V
 
     .line 79
     new-instance v3, Loms/GameEngine/GameView;
 
     invoke-direct {v3, p0}, Loms/GameEngine/GameView;-><init>(Landroid/content/Context;)V
 
-    iput-object v3, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->cView:Loms/GameEngine/GameView;
+    iput-object v3, p0, Lcom/jianghe/blockgame/BlockPro;->cView:Loms/GameEngine/GameView;
 
     .line 80
-    iget-object v3, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->cView:Loms/GameEngine/GameView;
+    iget-object v3, p0, Lcom/jianghe/blockgame/BlockPro;->cView:Loms/GameEngine/GameView;
 
-    iget-object v4, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->cOPhoneApp:Lcom/Wuzla/game/Block_AD/C_OPhoneApp;
+    iget-object v4, p0, Lcom/jianghe/blockgame/BlockPro;->cOPhoneApp:Lcom/jianghe/blockgame/C_OPhoneApp;
 
-    invoke-virtual {v4}, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->getCLib()Loms/GameEngine/C_Lib;
+    invoke-virtual {v4}, Lcom/jianghe/blockgame/C_OPhoneApp;->getCLib()Loms/GameEngine/C_Lib;
 
     move-result-object v4
 
     invoke-virtual {v3, v4}, Loms/GameEngine/GameView;->SetDraw(Loms/GameEngine/C_Lib;)V
 
     .line 81
-    iget-object v3, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->activityLayout:Landroid/widget/RelativeLayout;
+    iget-object v3, p0, Lcom/jianghe/blockgame/BlockPro;->activityLayout:Landroid/widget/RelativeLayout;
 
-    iget-object v4, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->cView:Loms/GameEngine/GameView;
+    iget-object v4, p0, Lcom/jianghe/blockgame/BlockPro;->cView:Loms/GameEngine/GameView;
 
     invoke-virtual {v3, v4}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;)V
 
@@ -529,11 +529,11 @@
 
     sget-object v4, Lcom/google/ads/AdSize;->BANNER:Lcom/google/ads/AdSize;
 
-    iget-object v5, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->AdMobID:Ljava/lang/String;
+    iget-object v5, p0, Lcom/jianghe/blockgame/BlockPro;->AdMobID:Ljava/lang/String;
 
     invoke-direct {v3, p0, v4, v5}, Lcom/google/ads/AdView;-><init>(Landroid/app/Activity;Lcom/google/ads/AdSize;Ljava/lang/String;)V
 
-    sput-object v3, Lcom/Wuzla/game/Block_AD/BlockPro;->adView:Lcom/google/ads/AdView;
+    sput-object v3, Lcom/jianghe/blockgame/BlockPro;->adView:Lcom/google/ads/AdView;
 
     .line 85
     new-instance v2, Lcom/google/ads/AdRequest;
@@ -542,12 +542,12 @@
 
     #.line 86
     #.local v2, "request":Lcom/google/ads/AdRequest;
-    #sget-object v3, Lcom/Wuzla/game/Block_AD/BlockPro;->adView:Lcom/google/ads/AdView;
+    #sget-object v3, Lcom/jianghe/blockgame/BlockPro;->adView:Lcom/google/ads/AdView;
 
     #invoke-virtual {v3, p0}, Lcom/google/ads/AdView;->setAdListener(Lcom/google/ads/AdListener;)V
 
     #.line 87
-    #sget-object v3, Lcom/Wuzla/game/Block_AD/BlockPro;->adView:Lcom/google/ads/AdView;
+    #sget-object v3, Lcom/jianghe/blockgame/BlockPro;->adView:Lcom/google/ads/AdView;
 
     #invoke-virtual {v3, v2}, Lcom/google/ads/AdView;->loadAd(Lcom/google/ads/AdRequest;)V
 
@@ -563,12 +563,12 @@
     invoke-virtual {v0, v8, v7}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
     .line 92
-    iput v8, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mLayoutMode:I
+    iput v8, p0, Lcom/jianghe/blockgame/BlockPro;->mLayoutMode:I
 
     .line 93
-    iget-object v3, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->activityLayout:Landroid/widget/RelativeLayout;
+    iget-object v3, p0, Lcom/jianghe/blockgame/BlockPro;->activityLayout:Landroid/widget/RelativeLayout;
 
-    sget-object v4, Lcom/Wuzla/game/Block_AD/BlockPro;->adView:Lcom/google/ads/AdView;
+    sget-object v4, Lcom/jianghe/blockgame/BlockPro;->adView:Lcom/google/ads/AdView;
 
     invoke-virtual {v3, v4, v0}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -579,9 +579,9 @@
     .end local v0    # "adWhirlLayoutParams":Landroid/widget/RelativeLayout$LayoutParams;
     .end local v2    # "request":Lcom/google/ads/AdRequest;
     :cond_1
-    iget-object v3, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->cOPhoneApp:Lcom/Wuzla/game/Block_AD/C_OPhoneApp;
+    iget-object v3, p0, Lcom/jianghe/blockgame/BlockPro;->cOPhoneApp:Lcom/jianghe/blockgame/C_OPhoneApp;
 
-    invoke-virtual {v3}, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->getCLib()Loms/GameEngine/C_Lib;
+    invoke-virtual {v3}, Lcom/jianghe/blockgame/C_OPhoneApp;->getCLib()Loms/GameEngine/C_Lib;
 
     move-result-object v3
 
@@ -607,17 +607,17 @@
 
     .prologue
     .line 186
-    iget-object v0, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->cOPhoneApp:Lcom/Wuzla/game/Block_AD/C_OPhoneApp;
+    iget-object v0, p0, Lcom/jianghe/blockgame/BlockPro;->cOPhoneApp:Lcom/jianghe/blockgame/C_OPhoneApp;
 
-    invoke-virtual {v0}, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->onDestory()V
+    invoke-virtual {v0}, Lcom/jianghe/blockgame/C_OPhoneApp;->onDestory()V
 
     .line 187
-    iget-object v0, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->cView:Loms/GameEngine/GameView;
+    iget-object v0, p0, Lcom/jianghe/blockgame/BlockPro;->cView:Loms/GameEngine/GameView;
 
     invoke-virtual {v0}, Loms/GameEngine/GameView;->onDestory()V
 
     .line 188
-    sget-object v0, Lcom/Wuzla/game/Block_AD/BlockPro;->adView:Lcom/google/ads/AdView;
+    sget-object v0, Lcom/jianghe/blockgame/BlockPro;->adView:Lcom/google/ads/AdView;
 
     invoke-virtual {v0}, Lcom/google/ads/AdView;->stopLoading()V
 
@@ -654,9 +654,9 @@
 
     .prologue
     .line 198
-    iget-object v0, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->cOPhoneApp:Lcom/Wuzla/game/Block_AD/C_OPhoneApp;
+    iget-object v0, p0, Lcom/jianghe/blockgame/BlockPro;->cOPhoneApp:Lcom/jianghe/blockgame/C_OPhoneApp;
 
-    invoke-virtual {v0, p1, p2}, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v0, p1, p2}, Lcom/jianghe/blockgame/C_OPhoneApp;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 
@@ -685,9 +685,9 @@
 
     .prologue
     .line 216
-    iget-object v0, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->cOPhoneApp:Lcom/Wuzla/game/Block_AD/C_OPhoneApp;
+    iget-object v0, p0, Lcom/jianghe/blockgame/BlockPro;->cOPhoneApp:Lcom/jianghe/blockgame/C_OPhoneApp;
 
-    invoke-virtual {v0, p1, p2}, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->onKeyUp(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v0, p1, p2}, Lcom/jianghe/blockgame/C_OPhoneApp;->onKeyUp(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 
@@ -708,12 +708,12 @@
 
     .prologue
     .line 168
-    iget-object v0, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->cOPhoneApp:Lcom/Wuzla/game/Block_AD/C_OPhoneApp;
+    iget-object v0, p0, Lcom/jianghe/blockgame/BlockPro;->cOPhoneApp:Lcom/jianghe/blockgame/C_OPhoneApp;
 
-    invoke-virtual {v0}, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->onPause()V
+    invoke-virtual {v0}, Lcom/jianghe/blockgame/C_OPhoneApp;->onPause()V
 
     .line 169
-    iget-object v0, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->cView:Loms/GameEngine/GameView;
+    iget-object v0, p0, Lcom/jianghe/blockgame/BlockPro;->cView:Loms/GameEngine/GameView;
 
     invoke-virtual {v0}, Loms/GameEngine/GameView;->onPause()V
 
@@ -741,7 +741,7 @@
     .line 254
     const/4 v0, 0x1
 
-    sput v0, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->mADFlag:I
+    sput v0, Lcom/jianghe/blockgame/C_OPhoneApp;->mADFlag:I
 
     .line 257
     return-void
@@ -754,18 +754,18 @@
     .line 176
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/Wuzla/game/Block_AD/BlockPro;->FullScreen(Z)V
+    invoke-virtual {p0, v0}, Lcom/jianghe/blockgame/BlockPro;->FullScreen(Z)V
 
     .line 177
-    invoke-virtual {p0}, Lcom/Wuzla/game/Block_AD/BlockPro;->resumeMoreGames()V
+    invoke-virtual {p0}, Lcom/jianghe/blockgame/BlockPro;->resumeMoreGames()V
 
     .line 178
-    iget-object v0, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->cOPhoneApp:Lcom/Wuzla/game/Block_AD/C_OPhoneApp;
+    iget-object v0, p0, Lcom/jianghe/blockgame/BlockPro;->cOPhoneApp:Lcom/jianghe/blockgame/C_OPhoneApp;
 
-    invoke-virtual {v0}, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->onResume()V
+    invoke-virtual {v0}, Lcom/jianghe/blockgame/C_OPhoneApp;->onResume()V
 
     .line 179
-    iget-object v0, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->cView:Loms/GameEngine/GameView;
+    iget-object v0, p0, Lcom/jianghe/blockgame/BlockPro;->cView:Loms/GameEngine/GameView;
 
     invoke-virtual {v0}, Loms/GameEngine/GameView;->onResume()V
 
@@ -782,9 +782,9 @@
 
     .prologue
     .line 229
-    iget-object v0, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->cOPhoneApp:Lcom/Wuzla/game/Block_AD/C_OPhoneApp;
+    iget-object v0, p0, Lcom/jianghe/blockgame/BlockPro;->cOPhoneApp:Lcom/jianghe/blockgame/C_OPhoneApp;
 
-    invoke-virtual {v0, p1}, Lcom/Wuzla/game/Block_AD/C_OPhoneApp;->onTouchEvent(Landroid/view/MotionEvent;)Z
+    invoke-virtual {v0, p1}, Lcom/jianghe/blockgame/C_OPhoneApp;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result v0
 
@@ -798,14 +798,14 @@
     const/4 v2, -0x1
 
     .line 138
-    iget-boolean v1, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mClickMoreGames:Z
+    iget-boolean v1, p0, Lcom/jianghe/blockgame/BlockPro;->mClickMoreGames:Z
 
     if-eqz v1, :cond_0
 
     .line 140
     const/4 v1, 0x0
 
-    iput-boolean v1, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mClickMoreGames:Z
+    iput-boolean v1, p0, Lcom/jianghe/blockgame/BlockPro;->mClickMoreGames:Z
 
     .line 141
     new-instance v0, Landroid/widget/RelativeLayout$LayoutParams;
@@ -816,14 +816,14 @@
 
     .line 142
     .local v0, "adWhirlLayoutParams":Landroid/widget/RelativeLayout$LayoutParams;
-    iget v1, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mLayoutMode:I
+    iget v1, p0, Lcom/jianghe/blockgame/BlockPro;->mLayoutMode:I
 
     invoke-virtual {v0, v1, v2}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
     .line 143
-    iget-object v1, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->activityLayout:Landroid/widget/RelativeLayout;
+    iget-object v1, p0, Lcom/jianghe/blockgame/BlockPro;->activityLayout:Landroid/widget/RelativeLayout;
 
-    sget-object v2, Lcom/Wuzla/game/Block_AD/BlockPro;->adView:Lcom/google/ads/AdView;
+    sget-object v2, Lcom/jianghe/blockgame/BlockPro;->adView:Lcom/google/ads/AdView;
 
     invoke-virtual {v1, v2, v0}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -839,10 +839,10 @@
 
     .prologue
     .line 272
-    iput-boolean p1, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->adViewStatus:Z
+    iput-boolean p1, p0, Lcom/jianghe/blockgame/BlockPro;->adViewStatus:Z
 
     .line 273
-    iget-object v2, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mHandler:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/jianghe/blockgame/BlockPro;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v2}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
@@ -873,7 +873,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
 
     .line 278
-    iget-object v2, p0, Lcom/Wuzla/game/Block_AD/BlockPro;->mHandler:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/jianghe/blockgame/BlockPro;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v2, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
