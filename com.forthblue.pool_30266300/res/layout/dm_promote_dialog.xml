@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.doodlemobile.gamecenter.FeatureView android:id="@id/featureview" android:layout_width="wrap_content" android:layout_height="wrap_content" dm:featureLocation="dm_promote_dialog" dm:type="promotedialog" dm:xmlname="dm_promote_dialog_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dm="dm.featureView.location" />

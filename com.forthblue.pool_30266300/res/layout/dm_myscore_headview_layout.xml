@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@null" android:layout_width="wrap_content" android:layout_height="78.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/dm_white" android:id="@id/myscore_title" android:background="@null" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginLeft="5.0dip" android:text="@string/dm_myscore" android:layout_alignParentLeft="true" />
+    <RelativeLayout android:id="@id/myscore_layout" android:background="@color/dm_frame1" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_below="@id/myscore_title">
+        <ImageView android:id="@id/myscore_headimage" android:background="@drawable/dm_head_icon_1" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="7.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="7.0dip" android:layout_toRightOf="@id/myscore_headimage" android:layout_alignParentTop="true">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/dm_gray" android:id="@id/myscore_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/dm_gray" android:id="@id/myscore_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_below="@id/myscore_username" android:layout_alignLeft="@id/myscore_username" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/dm_gray" android:id="@id/myscore_topscore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/dm_gray" android:id="@id/myscore_thisscore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_below="@id/myscore_username" android:layout_alignLeft="@id/myscore_topscore" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/dm_white" android:id="@id/everyone_title" android:background="@null" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginLeft="5.0dip" android:text="@string/dm_everyone" android:layout_below="@id/myscore_layout" android:layout_alignParentLeft="true" />
+</RelativeLayout>

@@ -1,0 +1,47 @@
+
+stick.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+stick_0
+  rotate: false
+  xy: 0, 0
+  size: 312, 7
+  orig: 312, 7
+  offset: 0, 0
+  index: -1
+stick_1
+  rotate: false
+  xy: 0, 10
+  size: 312, 7
+  orig: 312, 7
+  offset: 0, 0
+  index: -1
+stick_2
+  rotate: false
+  xy: 0, 20
+  size: 312, 7
+  orig: 312, 7
+  offset: 0, 0
+  index: -1
+stick_3
+  rotate: false
+  xy: 0, 30
+  size: 312, 7
+  orig: 312, 7
+  offset: 0, 0
+  index: -1
+stick_4
+  rotate: false
+  xy: 0, 40
+  size: 312, 7
+  orig: 312, 7
+  offset: 0, 0
+  index: -1
+stick_shadow
+  rotate: false
+  xy: 0, 50
+  size: 312, 7
+  orig: 312, 7
+  offset: 0, 0
+  index: -1

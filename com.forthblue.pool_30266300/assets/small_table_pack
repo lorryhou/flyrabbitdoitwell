@@ -1,0 +1,33 @@
+
+small_table.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+table_small_0
+  rotate: false
+  xy: 0, 0
+  size: 112, 202
+  orig: 112, 202
+  offset: 0, 0
+  index: -1
+table_small_1
+  rotate: false
+  xy: 114, 0
+  size: 112, 202
+  orig: 112, 202
+  offset: 0, 0
+  index: -1
+table_small_2
+  rotate: false
+  xy: 228, 0
+  size: 112, 202
+  orig: 112, 202
+  offset: 0, 0
+  index: -1
+table_small_3
+  rotate: false
+  xy: 342, 0
+  size: 112, 202
+  orig: 112, 202
+  offset: 0, 0
+  index: -1

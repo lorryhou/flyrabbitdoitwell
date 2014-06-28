@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/myscore_layout" android:background="@color/dm_frame1" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/myscore_headimage" android:background="@drawable/dm_head_icon_1" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="7.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="7.0dip" android:layout_toRightOf="@id/myscore_headimage" android:layout_alignParentTop="true">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/dm_gray" android:id="@id/myscore_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/dm_gray" android:id="@id/myscore_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_below="@id/myscore_username" android:layout_alignLeft="@id/myscore_username" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/dm_gray" android:id="@id/myscore_topscore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/dm_gray" android:id="@id/myscore_thisscore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_below="@id/myscore_username" android:layout_alignLeft="@id/myscore_topscore" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/myscore_layout">
+        <com.doodlemobile.gamecenter.DMTabHost android:id="@id/tabhost1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginTop="1.0px" android:layout_marginRight="0.0dip" android:layout_alignParentLeft="true" android:layout_alignParentRight="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.doodlemobile.gamecenter.DMTabWidget android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" />
+                <FrameLayout android:id="@id/tabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <ListView android:id="@id/leaderboard_top" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@drawable/dm_divider" android:dividerHeight="1.0px" />
+                    <ListView android:id="@id/leaderboard_me" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@drawable/dm_divider" android:dividerHeight="1.0px" />
+                </FrameLayout>
+            </LinearLayout>
+        </com.doodlemobile.gamecenter.DMTabHost>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/leaderboarder_item" android:background="@color/dm_frame1" android:layout_width="fill_parent" android:layout_height="42.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/leaderboarder_imagewrap" android:layout_width="wrap_content" android:layout_height="42.0dip">
+        <ImageView android:id="@id/myscore_headimage" android:background="@drawable/dm_head_icon_2" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/dm_gray" android:id="@id/leaderboarder_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/myscore_headimage" android:layout_alignParentTop="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/dm_gray" android:id="@id/leaderboarder_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="6.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dm_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/topbar" android:background="@drawable/dm_ttl" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <Button android:id="@id/back" android:background="@drawable/dm_back" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="3.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/dm_white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dm_moregamesIconLabel" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/topbar_icon" android:background="@drawable/dm_topbar_icon" android:layout_width="34.0dip" android:layout_height="28.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/featurebar_warp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/topbar">
+        <include android:id="@id/featurebar" layout="@layout/dm_feature_bar" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/allgame_bar" android:background="@color/dm_drak_blue" android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_below="@id/featurebar_warp">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/dm_white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/dm_allgame" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/moregame_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@drawable/dm_divider" android:dividerHeight="1.0px" android:layout_below="@id/allgame_bar" />
+</RelativeLayout>

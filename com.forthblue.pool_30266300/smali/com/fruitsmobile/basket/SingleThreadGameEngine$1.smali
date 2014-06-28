@@ -1,0 +1,14 @@
+.class synthetic Lcom/fruitsmobile/basket/SingleThreadGameEngine$1;
+.super Ljava/lang/Object;
+.source "SingleThreadGameEngine.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/fruitsmobile/basket/SingleThreadGameEngine;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1008
+    name = null
+.end annotation

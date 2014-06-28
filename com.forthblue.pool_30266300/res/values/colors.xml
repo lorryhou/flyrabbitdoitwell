@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dm_white">#ffffffff</color>
+    <color name="dm_black">#ff000000</color>
+    <color name="dm_blue">#ff73a4dc</color>
+    <color name="dm_drak_blue">#ff395f8e</color>
+    <color name="dm_gray">#ff4e4e4e</color>
+    <color name="dm_frame1">#ffcccccc</color>
+    <color name="dm_frame2">#ffeeeeee</color>
+    <color name="dm_divider">#ff9a9a9a</color>
+    <color name="dm_little_gray">#ffebebeb</color>
+    <color name="dm_me">#ff7eade7</color>
+    <color name="dm_no_back">#00000000</color>
+</resources>
