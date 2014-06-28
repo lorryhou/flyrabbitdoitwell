@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dm_featured_game_bg" android:layout_width="fill_parent" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/dm_drak_blue" android:id="@id/fetturegame_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:text="@string/dm_featured_games" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/featurebar" android:background="@drawable/dm_featured_game" android:layout_width="fill_parent" android:layout_height="67.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/fetturegame_text" android:layout_alignLeft="@id/fetturegame_text" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/feature_image" android:padding="1.0dip" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+        <ImageView android:background="@drawable/dm_arrows" android:layout_width="10.0dip" android:layout_height="16.0dip" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/feature_image" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/dm_gray" android:id="@id/feature_gamename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/dm_gray" android:id="@id/feature_companyname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_below="@id/feature_gamename" android:layout_alignLeft="@id/feature_gamename" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

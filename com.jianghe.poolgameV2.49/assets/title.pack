@@ -1,0 +1,33 @@
+
+title.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+title
+  rotate: false
+  xy: 1, 65
+  size: 680, 45
+  orig: 680, 45
+  offset: 0, 0
+  index: -1
+titlescore
+  rotate: false
+  xy: 683, 69
+  size: 340, 41
+  orig: 340, 41
+  offset: 0, 0
+  index: -1
+button_end_continuex
+  rotate: false
+  xy: 1, 9
+  size: 331, 55
+  orig: 331, 55
+  offset: 0, 0
+  index: -1
+stage_title_stage
+  rotate: false
+  xy: 334, 0
+  size: 195, 64
+  orig: 195, 64
+  offset: 0, 0
+  index: -1

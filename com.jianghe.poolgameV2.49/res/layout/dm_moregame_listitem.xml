@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/more_game_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/moregame_imagewrap" android:layout_width="wrap_content" android:layout_height="63.0dip">
+        <ImageView android:id="@id/moregame_image" android:background="@drawable/dm_getstart_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="19.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_toRightOf="@id/moregame_imagewrap" android:layout_alignParentTop="true">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/dm_gray" android:id="@id/moregame_gamename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/dm_gray" android:id="@id/moregame_companyname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_below="@id/moregame_gamename" android:layout_alignLeft="@id/moregame_gamename" />
+    </RelativeLayout>
+</RelativeLayout>

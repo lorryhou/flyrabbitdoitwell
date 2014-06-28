@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Main!</string>
+    <string name="app_name">Pool Billiards Pro</string>
+    <string name="appid">10026</string>
+    <string name="confirm_backtomenu">Do you really want to give up?</string>
+    <string name="confirm_title">Confirm</string>
+    <string name="wallpaper_desc">Live wallpaper for Pool Master</string>
+    <string name="submitting">Please wait...</string>
+    <string name="dm_featured_games">Featured Game</string>
+    <string name="dm_profileIconLabel">Profile</string>
+    <string name="dm_leaderboardIconLabel">Leaderboards</string>
+    <string name="dm_moregamesIconLabel">More Games</string>
+    <string name="dm_friendsIconLabel">Friends</string>
+    <string name="dm_myscore">My Score</string>
+    <string name="dm_everyone">Every One</string>
+    <string name="dm_username">Username</string>
+    <string name="dm_nickname">Nickname</string>
+    <string name="dm_score">Score</string>
+    <string name="dm_onlinetime">Time Online</string>
+    <string name="dm_allgame">All Games</string>
+    <string name="dm_photoPickerNotFoundText">No available pictures on the phone</string>
+    <string name="dm_facebook_friend_title">Add Facebook Friends</string>
+    <string name="dm_facebook_friend_desc">add your friends in facebook here</string>
+    <string name="dm_facebook_alreadybind">Your phone has bind facebook account</string>
+    <string name="dm_manageraccount">Manage Account</string>
+    <string name="dm_home">Home</string>
+    <string name="dm_change_icon">Change Picture</string>
+    <string name="dm_choose_from_device">Choose from device</string>
+    <string name="dm_takePicture">Take Picture</string>
+    <string name="dm_addPicture">Select Picture From Gallery</string>
+    <string name="dm_usePicture">Use this photo</string>
+    <string name="dm_removePicture">Remove icon</string>
+    <string name="dm_changePicture">Change icon</string>
+    <string name="dm_attachToContact">Doodle icon</string>
+    <string name="dm_noIntentHandleCamera">No Camera found on your Phone</string>
+    <string name="dm_noIntentHandleGallery">No Gallery found on your Phone</string>
+    <string name="dm_friends_not_play_the_same_game_title">Other Friends</string>
+    <string name="dm_games_played">Games Played</string>
+    <string name="dm_friends">Friends</string>
+    <string name="dm_add_friend_title">Add Friend</string>
+    <string name="dm_add_friend_msg">Add Friend</string>
+    <string name="dm_remove_friend_title">Remove Friend</string>
+    <string name="dm_remove_friend_msg">Remove Friend</string>
+    <string name="dm_love_doodle_mobile">Love Doodle Game Center?</string>
+    <string name="dm_get_start">Get Started!</string>
+    <string name="dm_getting_start">Getting Started:</string>
+    <string name="dm_submit_score_title">Submit Score</string>
+    <string name="dm_submit_score_text">Submit Score</string>
+    <string name="dm_first_open_title">Register Username</string>
+    <string name="dm_first_open_text">Register Username</string>
+    <string name="dm_change_username">Change Username</string>
+    <string name="dm_change_username_title">Change Username</string>
+    <string name="dm_change_username_text">Change Username</string>
+    <string name="dm_change_headicon_title">Change Profile Picture</string>
+    <string name="dm_change_headicon_text">Change Profile Picture</string>
+    <string name="dm_commit_facebookid_title">Binding Facebook Account</string>
+    <string name="dm_commit_facebookid_text">Binding Facebook Account</string>
+    <string name="dm_update_facebookfriends_title">Update Facebook Friends Relationship</string>
+    <string name="dm_update_facebookfriends_text">Update Facebook Friends Relationship</string>
+    <string name="facebook_logout_title">Logout Facebook</string>
+    <string name="facebook_logout_text">Logout Facebook</string>
+    <string name="dm_notavabilenetwork">Not Available Network</string>
+    <string name="dm_help_text">"
+Welcome to Doodle Game Center!
+
+Doodle Mobile is an independent publisher and developer for mobile games on Android platform established in 2010. We are dedicated to creating a social gaming network- Doodle Game Center for all android gamers. Our game center offers our users all kinds of mobile games connected with our unique learderboard. Its own statistic tool help gamers track their scores anytime.
+
+
+Till today We've got over millions daily players play in our game center around the world. To our delight, this amount is still increasing rapidly. And we are partnering with best game development studios and publishers.
+
+
+Doodle Game Center is a social game network supported for all Android devices. See how does it work.
+
+Leaderboards - Compete with all players around the world and find where did you come in.
+
+Featured Game - Here is the highly recommended game, why not have a try?
+
+Profile - Edit your personal information and upload your awesome photo here.
+
+More Games - Play other cool games and beat others!
+
+
+To learn more about Doodle Game Center, please send an email to contact@doodlemobile.com."</string>
+    <string name="dm_dialog_download">Free Download</string>
+    <string name="dm_dialog_close">Close</string>
+</resources>

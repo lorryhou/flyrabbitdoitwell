@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dm_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/home_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/profile_layout" android:background="@color/dm_frame2" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentTop="true">
+            <ImageView android:id="@id/my_headimage" android:background="@drawable/dm_head_icon_1" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="6.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/dm_gray" android:gravity="left" android:id="@id/username_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/dm_username" android:layout_toRightOf="@id/my_headimage" android:layout_alignParentTop="true" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:layout_alignLeft="@id/username_text" android:layout_alignParentTop="true">
+                <TextView android:textSize="12.0sp" android:textColor="@color/dm_gray" android:gravity="left" android:id="@id/level_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+                    <ImageView android:background="@drawable/dm_topbar_icon" android:layout_width="14.0dip" android:layout_height="12.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/dm_gray" android:id="@id/xp_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@id/username_text" android:layout_centerVertical="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/add_friend_warp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_below="@id/profile_layout">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_alignParentTop="true" />
+            <Button android:textColor="@color/dm_black" android:id="@id/add_friend" android:background="@drawable/dm_dialog_button" android:layout_width="266.0dip" android:layout_height="42.0dip" android:layout_marginTop="13.0dip" android:text="Add Friend" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ListView android:id="@id/userinfo_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@drawable/dm_divider" android:dividerHeight="1.0px" android:layout_below="@id/home_bar" />
+</RelativeLayout>

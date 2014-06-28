@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/dm_register_username_bg" android:layout_width="290.0dip" android:layout_height="187.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/dm_white" android:id="@id/change_usericon_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/dm_changePicture" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <Button android:textColor="#ff000000" android:id="@id/take_picture" android:background="@drawable/dm_dialog_button" android:layout_width="251.0dip" android:layout_height="42.0dip" android:layout_marginTop="14.0dip" android:text="@string/dm_takePicture" android:layout_below="@id/change_usericon_title" android:layout_centerHorizontal="true" />
+    <Button android:textColor="#ff000000" android:id="@id/addPicture" android:background="@drawable/dm_dialog_button" android:layout_width="251.0dip" android:layout_height="42.0dip" android:layout_marginTop="14.0dip" android:text="@string/dm_addPicture" android:layout_below="@id/take_picture" android:layout_centerHorizontal="true" />
+</RelativeLayout>

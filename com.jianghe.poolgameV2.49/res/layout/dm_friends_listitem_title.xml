@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/friend_item" android:background="@color/dm_frame2" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/friend_namewrap" android:layout_width="wrap_content" android:layout_height="44.0dip" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/dm_gray" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dm_friends_not_play_the_same_game_title" android:layout_centerInParent="true" />
+</RelativeLayout>
