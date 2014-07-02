@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:adsmogo="http://www.adsmogo.com">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_footer" android:layout_below="@id/ll_header" />
+    <com.adsmogo.adview.AdsMogoLayout android:id="@id/adsMogoView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="false" android:layout_alignParentBottom="true" adsmogo:appid="5b40c52169c84cb68e878b2f746fa3a7" adsmogo:express_mode="false" />
+</RelativeLayout>

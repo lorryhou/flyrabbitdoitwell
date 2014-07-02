@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="drawable" name="icon" id="0x7f020000" />
+    <public type="layout" name="activity_main" id="0x7f030000" />
+    <public type="layout" name="loading_page" id="0x7f030001" />
+    <public type="string" name="app_name" id="0x7f040000" />
+    <public type="string" name="exit_msg" id="0x7f040001" />
+    <public type="string" name="exit_confirm" id="0x7f040002" />
+    <public type="string" name="exit_cancel" id="0x7f040003" />
+    <public type="id" name="ll_header" id="0x7f050000" />
+    <public type="id" name="ll_footer" id="0x7f050001" />
+    <public type="id" name="ll_content" id="0x7f050002" />
+    <public type="id" name="adsMogoView" id="0x7f050003" />
+</resources>

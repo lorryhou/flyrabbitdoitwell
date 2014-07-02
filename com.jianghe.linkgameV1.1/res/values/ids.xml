@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="ll_header">false</item>
+    <item type="id" name="ll_footer">false</item>
+    <item type="id" name="ll_content">false</item>
+    <item type="id" name="adsMogoView">false</item>
+</resources>

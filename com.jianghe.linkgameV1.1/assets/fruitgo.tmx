@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="8" height="10" tilewidth="90" tileheight="90">
+ <tileset firstgid="1" name="fruitblock" tilewidth="90" tileheight="90">
+  <image source="fruitblock.png" width="180" height="180"/>
+ </tileset>
+ <layer name="gamelayer" width="8" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAMGHFgGGDCgdH14+KjqydVPzMUE9JPrvvxAQAm7AA/
+  </data>
+ </layer>
+</map>
